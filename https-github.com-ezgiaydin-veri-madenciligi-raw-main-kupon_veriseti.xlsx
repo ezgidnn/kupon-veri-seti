@@ -1,0 +1,16 @@
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+from sklearn.linear_model import LinearRegression, LogisticRegression
+from sklearn.model_selection import train_test_split
+from sklearn.preprocessing import MinMaxScaler, StandardScaler
+from sklearn.metrics import confusion_matrix, classification_report, accuracy_score
+import pandas as pd
+df = pd.DataFrame(data={
+    'Musteri_id': [1, 2, 3, 4, 5],
+    'cinsiyet': ['K', 'E', 'E', 'K', 'K'],
+    'önceki_alısveris': [8, 10, 2, 18, 22],
+    'kupon': [0, 1, 0, 1, 1]
+})
+
+print(df)
